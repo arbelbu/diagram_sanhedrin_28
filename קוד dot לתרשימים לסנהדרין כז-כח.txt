@@ -1,0 +1,218 @@
+
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+Conversations
+me
+(no subject)
+ 
+Attachment:
+עבודה בספרות אין מפסיקין..docx
+1:08 PM
+me
+(no subject)
+ 
+Attachment:
+סנהדרין כח.txt
+Attachment:
+תיק סדנת הר ארבל.docx
+1:02 PM
+PyCoder's Weekly
+Idiomatic Python, GIL Removal Meeting, PyCon 2022, Django 4.0, and More
+ - Writing Idiomatic Python #496 – OCTOBER 26, 2021 VIEW IN BROWSER The PyCoder's Weekly Logo Writing Idiomatic Python What are the programming idioms unique to Python? This course is a short overview
+ 
+Oct 26
+me
+קיץ וסתיו
+ 
+Attachment:
+Vivaldi - Autumn from the Four Seasons.pdf
+Attachment:
+Vivaldi - The Four Seasons Summer.pdf
+Oct 24
+me
+תיק סדנת הר
+ - מצו"ב
+Has attachment
+Oct 23
+me
+קוד dot לסנהדרין כח
+ - graph G { node[shape= box] subgraph cluster_1 { node [style=filled]; d1[shape=point] b0[label ="הוא"] b1[label ="אשתו", fillcolor=pink] b2[label ="אחיו"] b3[lab
+ 
+Oct 23
+Eran Burstain
+you won't believe it !
+ 
+Attachment:
+image.png
+Oct 21
+Starred
+בצלאל כהן
+הודאות והלוואות מול גזילות וחבלות סופי ומתוקן
+ 
+Attachment:
+הודאות והלוואות מול גזלות וחבלות לעניין מספר דיינים (2).docx
+Oct 21
+Starred
+ממרכז מדעני העתיד
+חולמים לייצג את ישראל באולימפיאדות הבינלאומיות במדעים?
+ - אם אינכם רואים מייל זה לחצו כאן תלמידות ותלמידי כיתות י'-יב' שימו לב!אנו מזמינים אתכן.ם להתמודד על מקום בנבחרות ישראל במדעים. אוהבים מתמטיקה ומדעים? חולמים לייצ
+ 
+Oct 21
+בצלאל כהן
+תיק סדנת ארץ ירדן וחרמונים
+ 
+Attachment:
+סופי סדנת ארץ ירדן וחרמונים.docx
+Oct 20
+ממרכז מדעני העתיד
+חולמים לייצג את ישראל באולימפיאדות הבינלאומיות במדעים?
+ - אם אינכם רואים מייל זה לחצו כאן תלמידות ותלמידי כיתות י'-יב' שימו לב!אנו מזמינים אתכן.ם להתמודד על מקום בנבחרות ישראל במדעים. אוהבים מתמטיקה ומדעים? חולמים לייצ
+ 
+Oct 20
+Shira Hirsh
+נבחרות ישראל במדעים- הזמנה למיון
+ - שלום רב בעבר לקחת חלק בתהליכי מיון לאחת מתוכניות מרכז מדעני העתיד. היכולות שלך הביאו אותך להיות ברשימת המועמדים הסופיים מתוך מאות נרשמים שניסו להתקבל לתוכניות ה
+Oct 17
+me
+תיק סדנת הר
+ 
+Attachment:
+תיק סדנת הר.docx
+Oct 17
+me
+(no subject)
+ 
+Attachment:
+בדיקת עיניים- ארבל.png
+Oct 16
+צוות חשבון Microsoft
+אימות כתובת הדואר האלקטרוני שלך
+ - חשבון Microsoft אימות כתובת הדואר האלקטרוני שלך כדי לסיים את ההגדרה של חשבון Microsoft שלך, עלינו רק לוודא שכתובת דואר אלקטרוני זו שייכת לך. כדי לאמת את כתובת ה
+ 
+Oct 15
+me
+שיעורי הכנה ונושא אישי לסדנת הר
+ 
+Attachment:
+הר גריזים והר עיבל.docx
+Attachment:
+נושא אישי.docx
+Attachment:
+יעקב אבינו.docx
+Oct 8
+me
+עבודות הכנה לסדנאת הר
+ 
+Attachment:
+גיאוגרפיה מאמר.doc
+Attachment:
+צמחיה מאמר.doc
+Attachment:
+גיאוגרפיה תשובות.docx
++3
+Oct 8
+Eran Burstain
+ברוך הבא
+ - שלום מורג.תתחדש על חשבון ה-google החדש שלך.אנא, השתמש בו בתבונה.אבא ואמא
+ 
+Oct 4
+me
+wireshark
+ - wireshark_.zip
+ 
+Aug 8
+0.56 GB of 15 GB used
+Terms · Privacy · Program Policies
+Last account activity: 8 hours ago
+Details
+graph G {
+  node[shape=box]
+  ranksep="1.1"
+
+  subgraph cluster_1 {
+    node [style=filled];
+    d1[shape=point]
+    b0[label ="הוא", fillcolor=lightskyblue, shape=doubleoctagon]
+    b1[label ="אשתו", fillcolor=pink]
+    b2[label ="אחיו", fillcolor=lightskyblue, color=red]
+    b3[label ="אחותו" fillcolor=pink]
+    b4[label ="בעל אחותו", fillcolor=lightskyblue, color=red]
+    b5[label ="אחות אשתו", fillcolor=pink]
+    d5[shape=point]
+    b6[label ="גיסו", fillcolor=lightskyblue, color=red]
+    d10[shape=point]
+    b7[label ="בעל אשתו", fillcolor=lightskyblue]
+    d11[shape=point]
+    {rank=same; b0,b1,b2,b3,b4,d1,d5,b5,b6,d10,b7,d11}
+    color=black
+  }
+ 
+  subgraph cluster_2 {
+    node [style=filled];
+    d0[shape=point]
+    a0[label ="אביו", fillcolor=lightskyblue]
+    a1[label ="אמו", fillcolor=pink]
+    a2[label ="אחי אביו", fillcolor=lightskyblue, color=red]
+    a3[label ="אחי אמו", fillcolor=lightskyblue, color=red]
+    a4[label ="אחות אמו", fillcolor=pink]
+    a5[label ="אחות אביו", fillcolor=pink]
+    a6[label ="בעל אחות אביו", fillcolor=lightskyblue, color=red]
+    a7[label ="בעל אחות אמו", fillcolor=lightskyblue, color=red]
+    d6[shape=point]
+    d7[shape=point]
+    a8[label ="חמיו", fillcolor=lightskyblue, color=red]
+    a9[label ="חמותו", fillcolor=pink]
+    d8[shape=point]
+    a10[label ="בעל אמו", fillcolor=lightskyblue, color=red]
+    d12[shape=point]
+    {rank=same; a0,a1,a2,a3,d0,a4,a5,a6,a7,d6,d7,a8,a9,d8,a10,d12}
+    color=black
+  }
+ 
+  subgraph cluster_3 {
+    node [style=filled];
+    c0[label ="בנו", fillcolor=lightskyblue]
+    c1[label ="בתו", fillcolor=pink]
+    c2[label ="בעל בתו", fillcolor=lightskyblue]
+    d4[shape=point]
+    c3[label ="חורגו", fillcolor=lightskyblue, color=red]
+    {rank=same; c0,c1,d4,c2,c3}
+    color=black
+  }
+ 
+  subgraph cluster_4 {
+    node [style=filled];
+    e0[label ="סבו", fillcolor=lightskyblue]
+    e1[label ="סבתו", fillcolor=pink]
+    e2[label ="סבו", fillcolor=lightskyblue]
+    e3[label ="סבתו", fillcolor=pink]
+    d2[shape=point]
+    d3[shape=point]
+    {rank=same; e0,e1,e2,e3, d2,d3}
+    color=black
+  }
+ 
+   e0--d2--{e1, a0, a2, a5}
+   e2--d3--{e3, a1, a3, a4}
+   a0--d0--{a1, b0, b2, b3}
+   b0--d1--{b1,c0,c1}
+   a8--d8--{a9,b1,b5}
+   b4--d5--b3
+   c1--d4--c2
+   a6--d6--a5
+   a4--d7--a7
+   b5--d10--b6
+   b1--d11--{b7,c3}
+   a1--d12--a10
+   
+   e0--e1--e2--e3[style=invis]
+   a6--a5--a2--a0--a1--a10--a8--a9--a3--a4--a7[style=invis]
+   a0--a1[style=invis]
+   b4--b3--b2--b0--b1--b7--b5--b6[style=invis]
+   c0--c1--c2--c3[style=invis]
+
+}
+סנהדרין כח.txt
+Displaying סנהדרין כח.txt.
