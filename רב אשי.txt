@@ -1,0 +1,43 @@
+graph G {
+  node[shape=box, style=filled]
+  ranksep="1.1"
+
+  subgraph cluster_0 {
+    e2[label ="אבי חמיו", fillcolor=lightskyblue]
+    e3[label ="אם חמיו", fillcolor=pink]
+    d3[shape=point]
+    {rank=same; e2,e3,d3}
+  }
+
+  subgraph cluster_1 {
+    a0[label ="חמותו", fillcolor=pink]
+    a1[label ="חמיו", fillcolor=lightskyblue]
+    a2[label ="אחי חמיו", fillcolor=lightskyblue color=red]
+    a3[label ="אחות חמיו", fillcolor=pink]
+    a4[label ="אשת אחי חמיו", fillcolor=pink]
+    a5[label ="בעל אחות חמיו", fillcolor=lightskyblue]
+    d1[shape=point]
+    d2[shape=point]
+    d4[shape=point]
+    {rank=same; a0,a1,a2,a3,a4,a5,d1,d2,d4}
+  }
+
+  subgraph cluster_2 {
+    d0[shape=point]
+    b0[label ="הוא", fillcolor=lightskyblue, shape=doubleoctagon]
+    b1[label ="אשתו", fillcolor=pink]
+    b2[label ="בן אחי חמיו", fillcolor=lightskyblue, color=red]
+    b3[label ="בן אחות חמיו", fillcolor=lightskyblue, color=red]
+    {rank=same; b0,b1,b2,b3,d0}
+  }
+ 
+   b0--d0--{b1}
+   a1--d1--{a0,b1}
+   e2--d3--{e3,a1,a2,a3}
+   a4--d2--{a2,b2}
+   a5--d4--{a3,b3}
+
+   e2--e3[style=invis]
+   a5--a3--a4--a2--a1--a0[style=invis]
+   b3--b2--b0--b1[style=invis]
+}

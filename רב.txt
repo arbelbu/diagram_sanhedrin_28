@@ -1,0 +1,58 @@
+graph G {
+  node[shape=box, style=filled]
+  ranksep="1.1"
+
+  x0[label ="דור 0"]
+  x1[label ="דור 1"]
+  x2[label ="דור 2"]
+  x3[label ="דור 3"]
+  x0--x1--x2--x3
+
+  subgraph cluster_0 {
+    e0[label ="סבו", fillcolor=lightskyblue]
+    e1[label ="סבתו", fillcolor=pink]
+    d2[shape=point]
+    {rank=same; e0,e1,d2}
+  }
+  
+  subgraph cluster_1 {
+    d0[shape=point]
+    a0[label ="אביו", fillcolor=lightskyblue]
+    a1[label ="אמו", fillcolor=pink]
+    a2[label ="אחי אביו", fillcolor=lightskyblue]
+    a5[label ="אשת אחי אביו", fillcolor=pink]
+    d6[shape=point]
+    {rank=same; a0,a1,a2,d0,a5,d6}
+  }  
+  
+  subgraph cluster_2 {
+    b0[label ="רב", fillcolor=lightskyblue, shape=doubleoctagon]
+    b3[label ="אשתו", fillcolor=pink]
+    d1[shape=point]
+    d5[shape=point]
+    b7[label ="חתן", fillcolor=lightskyblue]
+    b8[label ="בת", fillcolor=pink]
+    b9[label ="בן", fillcolor=lightskyblue]
+    {rank=same; b0,b3,b7,b8,b9,d1,d5}
+  }
+ 
+  subgraph cluster_3 {
+    c0[label ="חתנו", fillcolor=lightskyblue]
+    c1[label ="בתו", fillcolor=pink]
+    c2[label ="בנו", fillcolor=lightskyblue]
+    d4[shape=point]
+    {rank=same; c0,c1,d4,c2}
+  }
+
+   e0--d2--{e1,a0,a2}
+   a0--d0--{a1,b0}
+   a5--d6--{a2,b8,b9}
+   b0--d1--{b3,c1,c2}
+   c1--d4--{c0}
+   b7--d5--{b8}
+   
+   e0--e1[style=invis]
+   a5--a2--a0--a1[style=invis]
+   c2--c1--c0[style=invis]
+   b7--b8--b9--b0--b3[style=invis]
+}

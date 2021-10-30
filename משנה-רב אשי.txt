@@ -1,0 +1,66 @@
+graph G {
+  node[shape=box, style=filled]
+  ranksep="1.1"
+
+  subgraph cluster_0 {
+    e0[label ="סבו", fillcolor=lightskyblue]
+    e1[label ="סבתו", fillcolor=pink]
+    e2[label ="סבו", fillcolor=lightskyblue]
+    e3[label ="סבתו", fillcolor=pink]
+    d2[shape=point]
+    d3[shape=point]
+    {rank=same; e0,e1,e2,e3, d2,d3}
+  }
+  
+  subgraph cluster_1 {
+    d0[shape=point]
+    a0[label ="אביו", fillcolor=lightskyblue]
+    a1[label ="אמו", fillcolor=pink]
+    a2[label ="אחי אביו", fillcolor=lightskyblue]
+    a3[label ="אחי אמו", fillcolor=lightskyblue]
+    a4[label ="אשת אחות אמו", fillcolor=pink]
+    a5[label ="אשת אחי אביו", fillcolor=pink]
+    d6[shape=point]
+    d7[shape=point]
+    {rank=same; a0,a1,a2,a3,d0,a4,a5,d6,d7}
+  }  
+  
+  subgraph cluster_2 {
+    b0[label ="הוא", fillcolor=lightskyblue, shape=doubleoctagon]
+    b2[label ="אחיו", fillcolor=lightskyblue]
+    b3[label ="אשת אחיו", fillcolor=pink]
+    d1[shape=point]
+    b4[label ="חתן", fillcolor=lightskyblue, color=red]
+    b5[label ="בת", fillcolor=pink]
+    b6[label ="בן", fillcolor=lightskyblue]
+    d5[shape=point]
+    b7[label ="חתן", fillcolor=lightskyblue, color=red]
+    b8[label ="בת", fillcolor=pink]
+    b9[label ="בן", fillcolor=lightskyblue]
+    d8[shape=point]
+    {rank=same; b0,b2,b3,b4,b5,b6,b7,b8,b9,d1,d5,d8}
+  }
+ 
+  subgraph cluster_3 {
+    c0[label ="חתן", fillcolor=lightskyblue, color=red]
+    c1[label ="בת", fillcolor=pink]
+    c2[label ="בן", fillcolor=lightskyblue]
+    d4[shape=point]
+    {rank=same; c0,c1,d4,c2}
+  }
+
+   e0--d2--{e1,a0,a2}
+   e2--d3--{e3,a1,a3}
+   a0--d0--{a1,b0,b2}
+   a5--d6--{a2,b8,b9}
+   a3--d7--{a4,b5,b6}
+   b2--d1--{b3,c1,c2}
+   c1--d4--{c0}
+   b7--d5--{b8}
+   b5--d8--{b4}
+   
+   e0--e1--e2--e3[style=invis]
+   a5--a2--a0--a1--a3--a4[style=invis]
+   c2--c1--c0[style=invis]
+   b7--b8--b9--b0--b2--b3--b6--b5--b4[style=invis]
+}

@@ -1,0 +1,43 @@
+graph G {
+  node[shape=box, style=filled]
+  ranksep="1.1"
+
+  subgraph cluster_0 {
+    e2[label ="אבי חמותו", fillcolor=lightskyblue]
+    e3[label ="אם חמותו", fillcolor=pink]
+    d3[shape=point]
+    {rank=same; e2,e3,d3}
+  }
+
+  subgraph cluster_1 {
+    a0[label ="חמיו", fillcolor=lightskyblue]
+    a1[label ="חמותו", fillcolor=pink]
+    a2[label ="אחי חמותו", fillcolor=lightskyblue color=red]
+    a3[label ="אחות חמותו", fillcolor=pink]
+    a4[label ="אשת אחי חמותו", fillcolor=pink]
+    a5[label ="בעל אחות חמותו", fillcolor=lightskyblue]
+    d1[shape=point]
+    d2[shape=point]
+    d4[shape=point]
+    {rank=same; a0,a1,a2,a3,a4,a5,d1,d2,d4}
+  }
+
+  subgraph cluster_2 {
+    d0[shape=point]
+    b0[label ="רב נחמן", fillcolor=lightskyblue, shape=doubleoctagon]
+    b1[label ="אשתו", fillcolor=pink]
+    b2[label ="בן אחי חמותו", fillcolor=lightskyblue, color=red]
+    b3[label ="בן אחות חמותו", fillcolor=lightskyblue, color=red]
+    {rank=same; b0,b1,b2,b3,d0}
+  }
+ 
+   b0--d0--{b1}
+   a0--d1--{a1,b1}
+   e2--d3--{e3,a1,a2,a3}
+   a2--d2--{a4,b2}
+   a3--d4--{a5,b3}
+
+   e2--e3[style=invis]
+   a0--a1--a2--a4--a3--a5[style=invis]
+   b0--b1--b2--b3[style=invis]
+}
